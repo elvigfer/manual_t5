@@ -1,0 +1,258 @@
+@font-face 
+  font-family: 'Rubrik regular'
+  src: url('fuentes/Rubrik.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+  @font-face 
+  font-family: 'Rubrik medium'
+  src: url('fuentes/Rubrik-Medium.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+@font-face 
+  font-family: 'Rubrik bold'
+  src: url('fuentes/Rubrik-Bold.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+@font-face 
+  font-family: 'Rubrik Semibold'
+  src: url('fuentes/Rubrik-SemiBold.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+@font-face 
+  font-family: 'Rubrik Italic'
+  src: url('fuentes/Rubrik-Bold-Italic.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+$regular: 'Rubrik regular'
+$medium: 'Rubrik medium'
+$semi: 'Rubrik Semibold'
+$bold: 'Rubrik bold'
+$italic: 'Rubrik Italic'
+$azul-claro: #0da5de
+$azul-oscuro: rgb(20, 63, 112)
+$gris-claro: rgb(229, 229, 229)
+$rojo: rgb(225, 17, 26)
+$negro: rgb(0, 0, 0)
+$gris: #272727
+body
+  background-color: #fafafa
+main
+  width: 80%
+  margin-left: 20%
+  padding: 0px 30px 30px 30px
+  box-sizing: border-box
+p
+  font-family: $regular
+  font-size: 1rem
+  margin: 5px 0
+  color: $gris
+.menu-principal
+  width: 20%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  background-color: $azul-claro
+  ul
+    list-style: none
+    color: #ffffff
+    padding: 20px
+    .padre
+      padding-top: 10px
+      font-family: $bold
+    .hijo
+      padding: 5px 0
+      font-family: $regular
+a
+    text-decoration: none
+    color: #fff
+    font-size: 1.2rem
+    &:hover
+      color: $azul-oscuro
+h1
+  font-family: $semi
+  margin-top: 0
+  margin-bottom: 30px
+  color: $azul-oscuro
+  size: 2rem
+h2
+  font-family: $medium
+  margin: 0 0 5px 0
+  size: 1.5rem
+  color: $gris
+h3
+  font-family: $medium
+  font-size: 1.1rem
+  color: $gris
+.container-vertical
+  margin-bottom: 30px
+.azul
+  color: $azul-claro
+.escalatexto
+  height: 80px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1pt solid $azul-claro
+  p
+    margin: 0
+  .celda-t
+    width: 30%
+  .celda
+    width: 23%
+.container-horizontal
+  display: flex
+  flex-direction: row
+  width: 50%
+  justify-content: space-between
+  margin: 30px 0
+
+.pesos
+  font-size: 1.5rem
+  #regular-t
+    font-family: $regular
+  #semi-t
+    font-family: $semi
+  #bold-t
+    font-family: $bold
+  #italic-t
+    font-family: $italic
+.cuadrado-color
+  width: 20px
+  height: 150px
+  margin-right: 30px
+#azul
+  background-color: $azul-claro
+#azul-oscuro
+  background-color: $azul-oscuro
+#rojo
+  background-color: $rojo
+#blanco
+  background-color: #ffffff
+  border: solid 1px $negro
+#gris
+  background-color: $gris-claro
+.datos-color
+  width: 200px
+  font-family: $regular
+  margin-bottom: 20px
+.cuadrado-color
+  width: 250px
+.container-colores
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  flex-wrap: wrap
+.bold
+  font-family: $semi
+.rubrik
+  font-family: $semi
+  font-size: 2rem
+.estados
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin-bottom: 10px
+  .logo-completo
+    width: 500px
+    margin-right: 10px
+    margin-bottom: 10px
+  .logo-compacto
+    height: 110px
+.margenes
+  height: 110px
+.secciones
+  height: 110px
+#reticula
+  width: 100%
+  margin: 20px 0px
+.imgs-concepto
+  width: 500px
+  height: 250px
+  object-fit: cover
+  margin-right: 30px
+#derecha
+  margin-right: 0
+  margin-left: 30px
+.texto-concepto
+  max-width: 750px
+
+.lista-foto
+  font-family: $regular
+  list-style: disc
+.swiper-slide
+  width: 85%
+  img
+    margin-left: 10%
+    width: 80%
+.cabecera
+  display: none
+.escalatexto
+  h1
+    font-size: 36px
+    color: $negro
+.container-concepto
+  width: 100%
+  display: flex
+  flex-direction: row
+  h2
+    margin-bottom: 30px
+  div
+    width: 70%
+    img
+      width: 100%
+#intro
+  max-width: 750px
+#logo-menu
+  width: 100%
+  position: absolute
+  bottom: 10px
+.logo-cabecera
+  width: 200px
+  margin-left: 35%
+@media only screen and (max-width: 767px)
+  .hamburger 
+    display: block
+    position: fixed
+    z-index: 100
+    top: 1rem
+    left: 1rem
+    padding: 4px
+    cursor: pointer
+    border: none
+    background-color: transparent
+  .closeIcon
+    display: none
+    color: #fafafa
+  .menu-principal 
+    position: fixed
+    transform: translateY(-100%)
+    transition: transform 0.2s
+    top: 0
+    left: 0
+    z-index: 99
+    background-color: $azul-claro
+    color: white
+    list-style: none
+    padding-top: 4rem
+    width: 75%
+  .showMenu 
+    transform: translateY(0)
+  main
+    width: 100%
+    padding: 50px 30px 0 30px
+    margin: 0
+  .cabecera
+    width: 100%
+    background-color: #fafafa
+    height: 50px
+    position: fixed
+    top: 0
+    left: 0
+    display: block
+    z-index: 2
+  .container-concepto
+    div
+      width: 100%
