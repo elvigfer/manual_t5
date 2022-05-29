@@ -47,6 +47,7 @@ p {
   font-size: 1rem;
   margin: 5px 0;
   color: #272727;
+  max-width: 900px;
 }
 
 .menu-principal {
@@ -87,7 +88,7 @@ a:hover {
 h1 {
   font-family: "Rubrik Semibold";
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #143f70;
   size: 2rem;
 }
@@ -160,6 +161,11 @@ h3 {
 
 .pesos {
   font-size: 1.5rem;
+  background-color: #143f70;
+  color: #ffffff;
+  padding: 10px;
+  width: 170px;
+  margin: 10px 0;
 }
 
 .pesos #regular-t {
@@ -286,11 +292,7 @@ h3 {
 
 #derecha {
   margin-right: 0;
-  margin-left: 30px;
-}
-
-.texto-concepto {
-  max-width: 750px;
+  margin-left: 20%;
 }
 
 .lista-foto {
@@ -349,7 +351,24 @@ h3 {
   position: absolute;
   bottom: 10px;
 }
-
+#modificaciones{
+  width: 100%;
+}
+.img-intro{
+  width: 100%;
+}
+.animaciones{
+  width: 80%;
+  margin: auto;
+}
+.pastilla1{
+  width: 100%;
+  margin: 15px 0;
+}
+.pastilla2{
+  width: 30%;
+  margin: 15px 0;
+}
 @media only screen and (max-width: 767px) {
   .hamburger {
     display: block;
@@ -408,6 +427,28 @@ h3 {
   .logo-cabecera {
     width: 200px;
     margin-left: calc(50% - 100px);
+  }
+  .estados .logo-completo{
+    width: 90%;
+  }
+  .estados .logo-compacto{
+    height: auto;
+    width: 65%;
+  }
+  .secciones, .margenes{
+    height: auto;
+    width: 90%;
+  }
+  #derecha{
+    margin-left: 0;
+  }
+  .pastilla1{
+    width: 100%;
+    margin: 15px 0;
+  }
+  .pastilla2{
+    width: 60%;
+    margin: 15px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
